@@ -1,11 +1,10 @@
-/* ****************** */
-/* ***** HEADER ***** */
-/* ****************** */
+/* ******************* */
+/* ***** CONTENT ***** */
+/* ******************* */
 
-header {
-    background: blue;
-    display: grid;
-    grid-column: 1/2;
+.page-content {
+    background: green !important;
+    grid-column: 3/4;
     grid-row: 2/3;
 }
 
@@ -25,9 +24,9 @@ header {
 /* ************************** */
 
 @media only screen and (max-width: 991px) {
-    header {
+    .page-content {
         grid-column: 1;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
 }
 

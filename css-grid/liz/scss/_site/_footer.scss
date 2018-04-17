@@ -76,11 +76,38 @@ footer {
 /* ***** MEDIA QUERIES ***** */
 /* ************************* */
 
-/* *************************** */
-/* ***** RESPONSIVE 1024 ***** */
-/* *************************** */
+/* ************************** */
+/* ***** RESPONSIVE 991 ***** */
+/* ************************** */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
     footer {
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 525 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 525px) {
+    footer {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 340 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 340px) {
+    footer {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .footer-social {
+        padding-top: 10px;
+        text-align: left;
     }
 }

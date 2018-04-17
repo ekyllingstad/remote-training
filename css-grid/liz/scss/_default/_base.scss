@@ -156,8 +156,65 @@ a:active {
 .page-wrapper {
     display: grid;
     grid-template-columns: 144px 45px auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0 1fr 1fr;
     margin: 50px auto;
     max-width: 1084px;
     width: 100%;
+}
+
+/* ************************* */
+/* ***** MEDIA QUERIES ***** */
+/* ************************* */
+
+/* *************************** */
+/* ***** RESPONSIVE 1175 ***** */
+/* *************************** */
+
+@media only screen and (max-width: 1175px) {
+    .page-wrapper {
+        max-width: 900px;
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 991 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 991px) {
+    .page-wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 10px auto;
+        max-width: 714px;
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 768 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 768px) {
+    .page-wrapper {
+        max-width: 482px;
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 525 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 525px) {
+    .page-wrapper {
+        max-width: 324px;
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 340 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 340px) {
+    .page-wrapper {
+        max-width: 280px;
+    }
 }
