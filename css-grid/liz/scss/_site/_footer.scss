@@ -1,19 +1,86 @@
-/* ***************************
-* ***************************
-* *******  FOOTER  ***********
-* ***************************
-* *************************** */
+/* ****************** */
+/* ***** FOOTER ***** */
+/* ****************** */
 
-.footer {
+footer {
+    border-top: 2px solid #e5e5e5;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    padding-top: 20px;
 }
 
-/* ***************************
-* ****** Media Queries ******
-* ***************************
-* ***************************
-* ****** 800 and wider ******
-* *************************** */
-@media only screen and (min-width: 800px) {
-    .footer {
+.footer-copy {
+    color: #aaaaaa;
+    font-size: 75%;
+    grid-column: 1/2;
+    line-height: 1.6;
+    text-align: left;
+
+    ul li {
+        display: inline;
+    }
+
+    ul li::after {
+        content: "|";
+    }
+
+    ul li:last-child::after {
+        content: "";
+    }
+}
+
+.footer-social {
+    text-align: right;
+
+    li {
+        display: inline-block;
+
+        a {
+            color: rgba(0, 0, 0, 0);
+            display: block;
+            height: 32px;
+            opacity: .4;
+            overflow: hidden;
+            -webkit-transition: opacity .3s ease;
+               -moz-transition: opacity .3s ease;
+                    transition: opacity .3s ease;
+            vertical-align: middle;
+            width: 32px;
+        }
+
+        a:hover {
+            opacity: 1;
+            -webkit-transition: opacity .3s ease;
+               -moz-transition: opacity .3s ease;
+                    transition: opacity .3s ease;
+        }
+
+        .twitter {
+            background: url(../images/icon-twitter.png) no-repeat 50% 1px;
+        }
+
+        .facebook {
+            background: url(../images/icon-facebook.png) no-repeat 50% 1px;
+        }
+
+        .rss {
+            background: url(../images/icon-rss.png) no-repeat 50% 1px;
+        }
+    }
+}
+
+/* ************************* */
+/* ***** MEDIA QUERIES ***** */
+/* ************************* */
+
+/* *************************** */
+/* ***** RESPONSIVE 1024 ***** */
+/* *************************** */
+
+@media only screen and (max-width: 1024px) {
+    footer {
     }
 }

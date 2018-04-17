@@ -1,34 +1,16 @@
 /* *********************** */
-/* ***** MAIN COLORS *****
+/* ***** SITE COLORS ***** */
 /* *********************** */
 
-$london: #666666;
-$sydney: #0099ff;
-$paris: #cccccc;
-$rome: #cccccc;
-$dublin: #cccccc;
-$footer: #7d8082;
+$primary: #34ac98;
+$secondary: #ec6535;
+$highlight: #ffffa1;
 
 /* **************************** */
-/* ***** MAIN COLOR MIXES *****
+/* ***** SITE COLOR MIXES ***** */
 /* **************************** */
 
-$londonLight: mix(white, $london, 30%);
-$londonDark: mix(black, $rome, 30%);
-$sydneyLight: mix(white, $sydney, 30%);
-$sydneyDark: mix(black, $sydney, 30%);
-$parisLight: mix(white, $paris, 30%);
-$parisDark: mix(black, $paris, 30%);
-$romeLight: mix(white, $rome, 30%);
-$romeDark: mix(black, $rome, 30%);
-$dublinLight: mix(white, $dublin, 30%);
-$dublinDark: mix(black, $dublin, 30%);
-$sydneyLight: mix(white, $sydney, 30%);
-$sydneyDark: mix(black, $sydney, 30%);
-
-/* ***************************** */
-/* ***** TEXT *****
-/* ***************************** */
-
-$text: $london;
-$textBold: $londonDark;
+$primaryLight: mix(white, $primary, 30%);
+$primaryDark: mix(black, $primary, 30%);
+$secondaryLight: mix(white, $secondary, 30%);
+$secondaryDark: mix(black, $secondary, 30%);
