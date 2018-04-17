@@ -49,6 +49,10 @@ footer {
                     transition: opacity .3s ease;
             vertical-align: middle;
             width: 32px;
+
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
         }
 
         a:hover {
@@ -107,7 +111,6 @@ footer {
         grid-template-rows: auto auto;
     }
     .footer-social {
-        padding-top: 10px;
         text-align: left;
     }
 }

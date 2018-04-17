@@ -97,7 +97,6 @@ video {
 html,
 body {
     font-family: "Unify Serif", "Times New Roman", serif;
-    height: 100%;
     line-height: 1;
     width: 100%;
 }
@@ -156,7 +155,7 @@ a:active {
 .page-wrapper {
     display: grid;
     grid-template-columns: 144px 45px auto;
-    grid-template-rows: 0 1fr 1fr;
+    grid-template-rows: 0 auto 78px;
     margin: 50px auto;
     max-width: 1084px;
     width: 100%;
@@ -183,7 +182,7 @@ a:active {
 @media only screen and (max-width: 991px) {
     .page-wrapper {
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 78px;
         margin: 10px auto;
         max-width: 714px;
     }
@@ -215,6 +214,7 @@ a:active {
 
 @media only screen and (max-width: 340px) {
     .page-wrapper {
+        grid-template-rows: auto auto 120px;
         max-width: 280px;
     }
 }

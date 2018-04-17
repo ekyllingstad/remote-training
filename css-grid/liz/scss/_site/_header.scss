@@ -3,10 +3,26 @@
 /* ****************** */
 
 header {
-    background: blue;
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.branding {
+    background: url(../images/food-sense-logo.png) no-repeat 0 0;
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    height: 120px;
+    text-indent: -999em;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    width: 120px;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
 }
 
 /* ************************* */
