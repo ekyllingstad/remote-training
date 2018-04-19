@@ -3,13 +3,125 @@
 <!-- BEGIN HOMEPAGE CONTENT -->
 <section class="page-content">
 
+    <!-- CAROUSEL -->
+    <section class="carousel">
 
+        <!-- SLIDES -->
+        <div class="slides" id="displaySlides">
+            <section id="slide1">
+                <a href="http://foodsense.is/tastemakers">
+                    <h1>What's Cooking?</h1>
+                    <h2>Browse our gallery for dependably delicious recipes.</h2>
+                </a>
+            </section>
+            <section id="slide2">
+                <a href="http://foodsense.is/blog" class="switch">
+                    <h1>Read, Learn, Share</h1>
+                    <h2>Get daily how-tos, stories, &amp; updates with the latest news.</h2>
+                </a>
+            </section>
+            <section id="slide3">
+                <a href="http://foodsense.is/a-list">
+                    <h1>Shop for the Best</h1>
+                    <h2>With our carefully curated vendor list, you'll know what to buy.</h2>
+                </a>
+            </section>
+            <section id="slide4">
+                <a href="http://foodsense.is/contribute" class="switch">
+                    <h1>Share your Food Sense</h1>
+                    <h2>Submit your favorite recipes, become a contributor, or get interviewed.</h2>
+                </a>
+            </section>
 
+            <!-- PHOTO CREDIT -->
+            <p class="photo-credit">
+                <span>*</span> photo by
+                <a href="http://clarebarboza.com/">Clare Barboza</a>
+            </p>
 
-    Content
+        </div>
+        <!-- END SLIDES -->
 
+        <!-- CAROUSEL NAV -->
+        <ul class="carousel-nav">
+            <li class="active" onclick="document.getElementById('displaySlides').innerHTML=document.getElementById('slide1').innerHTML;">
+                <h3>Tastemakers</h3>
+                <p>Feast your eyes &amp; get recipes!</p>
+            </li>
+            <li onclick="document.getElementById('displaySlides').innerHTML=document.getElementById('slide2').innerHTML;">
+                <h3>Blog</h3>
+                <p>News, how-tos, stories and more</p>
+            </li>
+            <li onclick="document.getElementById('displaySlides').innerHTML=document.getElementById('slide3').innerHTML;">
+                <h3>The A-List</h3>
+                <p>Handpicked, absolute favorites</p>
+            </li>
+            <li onclick="document.getElementById('displaySlides').innerHTML=document.getElementById('slide4').innerHTML;">
+                <h3>Contribute</h3>
+                <p>We want to hear from you!</p>
+            </li>
+        </ul>
+        <!-- END CAROUSEL NAV -->
 
+    </section>
+    <!-- END CAROUSEL -->
 
+    <!-- MAILING LIST -->
+    <section class="mailing-list dotted">
+        <p>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly
+            to your inbox.</p>
+        <form>
+            <input type="text" placeholder="Email"></input>
+            <button type="submit" value="Subscribe">Subscribe</button>
+        </form>
+    </section>
+    <!-- END MAILING LIST -->
+
+    <!-- ARTICLES -->
+    <section class="articles">
+        <ul>
+            <li>
+                <img src="images/article-1.jpg" alt="2012’s Best Summer Cookbooks" title="2012’s Best Summer Cookbooks">
+                <h1>2012’s Best Summer Cookbooks</h1>
+                <p>With the best of the season coming from “orchards, farms and gardens,” NPR has put together an impressive
+                    collection of 10 summer cookbooks.</p>
+                <p>
+                    <span>May 23, 2012</span>
+                    <a href="#"> Read &raquo;</a>
+                </p>
+            </li>
+            <li>
+                <img src="images/article-2.jpg" alt="How to Make Vegetable Chips" title="How to Make Vegetable Chips">
+                <h1>How to Make Vegetable Chips</h1>
+                <p>About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our cousin in
+                    Brooklyn, and before a very thoughtfully prepared vegan…</p>
+                <p>
+                    <span>May 17, 2012</span>
+                    <a href="#"> Read &raquo;</a>
+                </p>
+            </li>
+            <li>
+                <img src="images/article-3.png" alt="Join us on Pinterest!" title="Join us on Pinterest!">
+                <h1>Join us on Pinterest!</h1>
+                <p>If I could curate a cookbook for you, this would be it.</p>
+                <p>
+                    <span>May 16, 2012</span>
+                    <a href="#"> Read &raquo;</a>
+                </p>
+            </li>
+            <li>
+                <img src="images/article-4.jpg" alt="Recipes from a Sunday Supper" title="Recipes from a Sunday Supper">
+                <h1>Recipes from a Sunday Supper</h1>
+                <p>I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful
+                    Sunday supper - eat them slowly, a little bit at…</p>
+                <p>
+                    <span>May 15, 2012</span>
+                    <a href="#"> Read &raquo;</a>
+                </p>
+            </li>
+        </ul>
+    </section>
+    <!-- END ARTICLES -->
 
 </section>
 <!-- END HOMEPAGE CONTENT -->

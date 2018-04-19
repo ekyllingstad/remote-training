@@ -97,6 +97,7 @@ video {
 html,
 body {
     font-family: "Unify Serif", "Times New Roman", serif;
+    letter-spacing: -.25px;
     line-height: 1;
     width: 100%;
 }
@@ -120,6 +121,7 @@ section {
     -webkit-user-select: text;
        -moz-user-select: text;
         -ms-user-select: text;
+            user-select: text;
 }
 
 /* ****************** */
@@ -128,6 +130,7 @@ section {
 
 a {
     color: $primary;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -136,7 +139,7 @@ a:active {
     color: $secondary;
 }
 
-.underline {
+.dotted {
     border-bottom: 1px dashed #e5e5e5;
 }
 
@@ -154,8 +157,7 @@ a:active {
 
 .page-wrapper {
     display: grid;
-    grid-template-columns: 144px 45px auto;
-    grid-template-rows: 0 auto 78px;
+    grid-template: 0 auto 78px / 146px 45px auto;
     margin: 50px auto;
     max-width: 1084px;
     width: 100%;
@@ -181,8 +183,7 @@ a:active {
 
 @media only screen and (max-width: 991px) {
     .page-wrapper {
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto 78px;
+        grid-template: auto auto 78px / 100%;
         margin: 10px auto;
         max-width: 714px;
     }
@@ -214,7 +215,7 @@ a:active {
 
 @media only screen and (max-width: 340px) {
     .page-wrapper {
-        grid-template-rows: auto auto 120px;
+        grid-template: auto auto 120px / 100%;
         max-width: 280px;
     }
 }

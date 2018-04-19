@@ -11,6 +11,5 @@ $highlight: #ffffa1;
 /* **************************** */
 
 $primaryLight: mix(white, $primary, 30%);
-$primaryDark: mix(black, $primary, 30%);
-$secondaryLight: mix(white, $secondary, 30%);
-$secondaryDark: mix(black, $secondary, 30%);
+$primaryLighter: mix(white, $primary, 80%);
+$primaryLightest: mix(white, $primary, 92%);

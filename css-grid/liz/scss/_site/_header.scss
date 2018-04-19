@@ -6,13 +6,16 @@ header {
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
+    grid-template: 125px 300px auto / 100%;
 }
 
 .branding {
-    background: url(../images/food-sense-logo.png) no-repeat 0 0;
+    background: url(../images/food-sense-logo.png) left -60px no-repeat;
+    background-size: 100%;
     color: rgba(0, 0, 0, 0);
     display: block;
     height: 120px;
+    overflow: hidden;
     text-indent: -999em;
     -webkit-transition: all .3s ease;
        -moz-transition: all .3s ease;
@@ -25,16 +28,122 @@ header {
         -ms-user-select: none;
 }
 
+.branding:hover {
+    opacity: .85;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+nav ul {
+    margin: 32px 0;
+
+    li {
+        margin: 10px 0;
+
+        a {
+            background: 0 center no-repeat;
+            display: block;
+            font-size: 95%;
+            font-style: italic;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 0 0 44px;
+            -webkit-transition: all .15s ease;
+               -moz-transition: all .15s ease;
+                 -o-transition: all .15s ease;
+                    transition: all .15s ease;
+        }
+
+        .tastemakers {
+            background-image: url(../images/nav-tastemakers.png);
+        }
+
+        .blog {
+            background-image: url(../images/nav-blog.png);
+        }
+
+        .alist {
+            background-image: url(../images/nav-alist.png);
+        }
+
+        .contribute {
+            background-image: url(../images/nav-contribute.png);
+        }
+
+        .about {
+            background-image: url(../images/nav-about.png);
+        }
+
+        a:hover {
+            background-position: 5px center;
+            -webkit-transition: all .15s ease;
+               -moz-transition: all .15s ease;
+                 -o-transition: all .15s ease;
+                    transition: all .15s ease;
+        }
+    }
+}
+
+.header-social {
+    margin: 30px 0;
+
+    h1 {
+        font-size: 75%;
+        margin: 0 0 9px;
+        opacity: .95;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: .6825em;
+        font-style: italic;
+        line-height: 1.75em;
+        margin-bottom: 15px;
+        overflow: hidden;
+
+        .button {
+            background: no-repeat 6px 6px #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            -webkit-box-shadow: 1px 1px 2px #f5f5f5;
+               -moz-box-shadow: 1px 1px 2px #f5f5f5;
+                    box-shadow: 1px 1px 2px #f5f5f5;
+            display: block;
+            height: 28px;
+            line-height: 26px;
+            margin: 0 0 22px 0;
+            padding: 0 0 0 28px;
+            -webkit-transition: all .2s ease;
+               -moz-transition: all .2s ease;
+                 -o-transition: all .2s ease;
+                    transition: all .2s ease;
+        }
+
+        .button:hover {
+            background-color: $primaryLightest;
+            border-color: $primaryLighter;
+            -webkit-transition: all .2s ease;
+               -moz-transition: all .2s ease;
+                 -o-transition: all .2s ease;
+                    transition: all .2s ease;
+        }
+    }
+
+    .twitter a {
+        background-image: url(../images/icon-twitter-16.png);
+    }
+
+    .facebook a {
+        background-image: url(../images/icon-facebook-16.png);
+    }
+}
+
 /* ************************* */
 /* ***** MEDIA QUERIES ***** */
 /* ************************* */
-
-/* *************************** */
-/* ***** RESPONSIVE 1175 ***** */
-/* *************************** */
-
-@media only screen and (max-width: 1175px) {
-}
 
 /* ************************** */
 /* ***** RESPONSIVE 991 ***** */
@@ -44,6 +153,34 @@ header {
     header {
         grid-column: 1;
         grid-row: 1/2;
+        grid-template: 100% / auto auto;
+        margin: 10px 15px 20px 15px;
+    }
+
+    nav {
+        text-align: right;
+        ul {
+            margin: 32px 0;
+            li {
+                display: inline-block;
+                margin: 0 20px;
+                text-align: center;
+
+                a {
+                    background-position: center top;
+                    display: block;
+                    padding: 30px 0 0 0;
+                }
+
+                a:hover {
+                    background-position: center 4px;
+                }
+            }
+        }
+    }
+
+    .header-social {
+        display: none;
     }
 }
 
@@ -52,4 +189,70 @@ header {
 /* ************************** */
 
 @media only screen and (max-width: 768px) {
+    nav ul {
+        margin: 38px 0;
+        li {
+            margin: 0 5px;
+            text-align: right;
+
+            a {
+                background-position: -9999px;
+                font-size: 75%;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 525 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 525px) {
+    header {
+        grid-template: 40px auto / 100% auto;
+        margin: 0 0 5px 0;
+    }
+
+    .branding {
+        grid-row: 2/3;
+        margin: 20px auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav {
+        border-bottom: 1px solid #e5e5e5;
+        grid-row: 1/2;
+
+        ul {
+            margin: 0;
+            text-align: left;
+
+            li {
+                margin: 7px 0 0 9px;
+                text-align: left;
+
+                a {
+                    background: none !important;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+
+/* ************************** */
+/* ***** RESPONSIVE 340 ***** */
+/* ************************** */
+
+@media only screen and (max-width: 340px) {
+    nav ul li {
+        margin: 7px 0 0 5px;
+
+        a {
+            font-size: 70%;
+            padding: 3px 0 0 0;
+        }
+    }
 }
